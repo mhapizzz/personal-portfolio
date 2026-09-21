@@ -21,9 +21,8 @@ export const about = {
   name: 'Muhammad Hapiz',
   roles: ['Frontend Developer', 'Full-Stack Developer', 'Backend Developer'],
   profile: [
-    'Informatics Engineering graduate with professional experience as a Frontend, Full-Stack, and Backend Developer in industry and freelance settings. Focused on building web apps from the frontend side: responsive interfaces, REST API integration, and a smooth user experience.',
-    'Hands-on with JavaScript, Vue.js, and Nuxt.js for web apps, and comfortable across the full stack. Backend experience with PHP/Laravel and Node.js covers API needs, data structure, authentication, and frontend-backend integration.',
-    'Used to turning business requirements into structured technical solutions, and collaborating with teams to ship maintainable, scalable web applications.',
+    'Web Developer with 5+ years of experience in Frontend, Full-Stack, and Backend Development across industry and freelance projects. Skilled in JavaScript, Vue.js, React.js, PHP/Laravel, and Node.js, with experience building responsive web applications, REST APIs, and frontend-backend integrations.',
+    'Experienced in translating business requirements into scalable, maintainable technical solutions and collaborating effectively within development teams.',
   ],
   skillGroups: [
     {
