@@ -86,6 +86,7 @@ const layout = computed(() => route.name || 'home')
       <div class="sk-about-cta">
         <div class="sk-bone sk-cta"></div>
         <div class="sk-bone sk-cta sk-cta-ghost"></div>
+        <div class="sk-bone sk-cta sk-cta-ghost"></div>
       </div>
     </div>
 

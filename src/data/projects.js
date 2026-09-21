@@ -2,6 +2,8 @@ export const WHATSAPP_URL = 'https://wa.me/6281253580289'
 export const EMAIL = 'mhapiz10@gmail.com'
 export const PHONE_DISPLAY = '(+62) 812-5358-0289'
 export const LOCATION = 'Lanjas, Muara Teweh, Kalimantan Tengah'
+export const CV_URL = `${import.meta.env.BASE_URL}cv/Muhammad-Hapiz-CV.pdf`
+export const CV_FILENAME = 'Muhammad-Hapiz-CV.pdf'
 
 export const skills = [
   'Vue.js',

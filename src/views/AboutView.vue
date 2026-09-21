@@ -2,6 +2,8 @@
 import { RouterLink } from 'vue-router'
 import {
   about,
+  CV_FILENAME,
+  CV_URL,
   EMAIL,
   LOCATION,
   PHONE_DISPLAY,
@@ -16,8 +18,6 @@ import {
       <h1 class="page-title">{{ about.name }}</h1>
       <p class="about-roles">{{ about.roles.join(' · ') }}</p>
       <p class="about-meta muted">
-        {{ LOCATION }}
-        <span aria-hidden="true"> · </span>
         <a :href="`mailto:${EMAIL}`">{{ EMAIL }}</a>
         <span aria-hidden="true"> · </span>
         <a :href="WHATSAPP_URL" target="_blank" rel="noopener">{{ PHONE_DISPLAY }}</a>
@@ -74,6 +74,7 @@ import {
 
     <div class="about-cta actions">
       <a class="btn btn-primary" :href="WHATSAPP_URL" target="_blank" rel="noopener">Chat on WhatsApp</a>
+      <a class="btn btn-ghost" :href="CV_URL" :download="CV_FILENAME">Download CV</a>
       <RouterLink class="btn btn-ghost" to="/projects">See projects</RouterLink>
     </div>
   </section>
