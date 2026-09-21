@@ -2,9 +2,13 @@
 import { ref, computed, provide, watch, onMounted, onUnmounted } from 'vue'
 import { RouterLink, RouterView, useRoute } from 'vue-router'
 import { EMAIL } from './data/projects'
+import PageSkeleton from './components/PageSkeleton.vue'
+import { useRouteLoading } from './composables/useRouteLoading'
 
 const route = useRoute()
 const menuOpen = ref(false)
+const mainInnerRef = ref(null)
+const { loading } = useRouteLoading(mainInnerRef)
 
 function openMenu() {
   menuOpen.value = true
@@ -90,10 +94,23 @@ onUnmounted(() => {
       </div>
     </header>
 
-    <main class="main">
-      <div class="main-inner" :class="{ 'is-home': isHome }">
-        <RouterView />
+    <main class="main" :aria-busy="loading ? 'true' : undefined">
+      <div
+        ref="mainInnerRef"
+        class="main-inner"
+        :class="{ 'is-home': isHome, 'is-page-loading': loading }"
+      >
+        <RouterView v-slot="{ Component }">
+          <component
+            :is="Component"
+            :key="route.fullPath"
+            class="page-view"
+            :class="{ 'is-revealed': !loading }"
+          />
+        </RouterView>
       </div>
+
+      <PageSkeleton v-if="loading" />
     </main>
 
     <footer v-if="!isHome" class="foot">

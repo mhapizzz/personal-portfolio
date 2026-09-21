@@ -84,8 +84,8 @@ onUnmounted(() => {
 <template>
   <section class="poster">
     <div class="poster-bg-glyphs" aria-hidden="true">
-      <span class="g-y">Y</span>
-      <span class="g-p">P</span>
+      <span class="g-y">H</span>
+      <span class="g-p">Z</span>
     </div>
 
     <div class="poster-stage">
