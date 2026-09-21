@@ -19,7 +19,7 @@ export const skills = [
 
 export const about = {
   name: 'Muhammad Hapiz',
-  roles: ['Frontend Developer', 'Full-Stack Developer', 'Backend Developer'],
+  roles: ['Full-Stack Developer', 'Backend Developer', 'Frontend Developer'],
   profile: [
     'Web Developer with 5+ years of experience in Frontend, Full-Stack, and Backend Development across industry and freelance projects. Skilled in JavaScript, Vue.js, React.js, PHP/Laravel, and Node.js, with experience building responsive web applications, REST APIs, and frontend-backend integrations.',
     'Experienced in translating business requirements into scalable, maintainable technical solutions and collaborating effectively within development teams.',
